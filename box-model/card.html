@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card View</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Noto+Sans:wght@900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .box {
+        width: 400px;
+        height: 350px;
+        /* border: 1px solid black; */
+        box-sizing: border-box;
+        box-shadow: 2px 1px 1px grey;
+        border-radius: 10px;
+      }
+      .card {
+        /* border: 1px solid black; */
+        width: 400px;
+        padding: 20px;
+      }
+      img {
+        width: 358px;
+        height: 202px;
+        border-radius: 10px;
+      }
+      .text {
+        font-family: "Montserrat", sans-serif;
+        margin: 10px;
+      }
+      hr {
+        width: 200px;
+        border: 1px solid lightgrey;
+      }
+      .sold-out {
+        font-family: "Ubuntu", sans-serif;
+      }
+      p {
+        display: inline;
+        font-family: "Ubuntu", sans-serif;
+        padding: 10px;
+        color: blue;
+        margin: 2px;
+      }
+      p > .sold-out {
+        color: grey;
+      }
+      button {
+        background-color: lightgray;
+        color: white;
+        font-family: "Ubuntu", sans-serif;
+        padding: 2px;
+        width: 70px;
+        height: 20px;
+        border-style: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="card">
+        <img
+          src="./63ac9183e4b0f1067f1b7b32_scaled_cover_daabaae21b.jpg"
+          alt="love-babbar"
+        />
+        <div class="text">
+          <b>
+            Data Structures And Algorithms<br />
+            Bootcamp @ Supreme Batch
+          </b>
+        </div>
+        <hr />
+        <div class="price">
+          <p><b>Rs3000</b></p>
+          <p>
+            <s class="sold-out"><b>Rs7000</b></s>
+          </p>
+          <p>
+            <button><b>35%off</b></button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
